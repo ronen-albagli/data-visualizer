@@ -1,0 +1,45 @@
+.app-side-nav {
+  position: fixed;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  background-color: #193f5e;
+  border-right: 0.5px solid #546f86;
+  z-index: 3;
+  .nav-elements {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 10px;
+      display: flex;
+      padding: 10px;
+      border-bottom: 1px solid #ffffff40;
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+      &:hover {
+        background-color: #426886;
+      }
+    }
+  }
+
+  .app-logo {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b476c;
+    position: relative;
+    a {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    img {
+      height: 35px;
+    }
+  }
+}

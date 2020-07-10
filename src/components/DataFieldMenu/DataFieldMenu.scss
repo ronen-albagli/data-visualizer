@@ -1,0 +1,40 @@
+.data-field-container {
+  background-color: #224969;
+  z-index: 1;
+  transition: left 0.3s ease;
+  overflow: hidden;
+  width: 100px;
+  position: relative;
+  height: 100%;
+  transition: width 0.3s ease;
+
+  &.toggle {
+  }
+  &.collapse {
+    width: 25px;
+  }
+  .fields {
+    padding: 2px;
+    color: white;
+    font-size: 8px;
+    font-weight: 400;
+    div {
+      padding: 2px;
+    }
+    &.visible {
+      opacity: 1;
+    }
+    &.hidden {
+      opacity: 0;
+    }
+    .obj-key {
+      cursor: pointer;
+    }
+  }
+  .collapse-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: 2000;
+  }
+}
